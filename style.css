@@ -1,0 +1,100 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+.content {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.top {
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 30px;
+}
+
+.top h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.top p {
+    color: hsl(218, 22%, 67%);
+    line-height: 30px;
+}
+
+.middle {
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px;
+}
+
+.middle h2 {
+    color: white;
+}
+.middle p {
+    color:hsl(204, 43%, 93%);
+}
+
+.middle span {
+    font-size: 30px;
+    padding-right: 10px;
+    color: white;
+}
+
+button {
+    width: 95%;
+    height: 50px; 
+    background: hsl(71, 73%, 54%);
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    color: white;
+}
+
+.last {
+    background-color: rgba(74,190,189,255);
+    padding: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.last h2 {
+    color: white;
+}
+
+.last p {
+    color:hsl(204, 43%, 93%);
+}
+
+@media only screen and (min-width: 800px) {
+    .content {
+        width: 50vw;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .top {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .middle {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-bottom-left-radius: 5px;
+    }
+
+    .last {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-bottom-left-radius: 0;
+    }
+}
